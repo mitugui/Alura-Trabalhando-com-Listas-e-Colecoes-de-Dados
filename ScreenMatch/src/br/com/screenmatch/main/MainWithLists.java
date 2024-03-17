@@ -24,8 +24,9 @@ public class MainWithLists {
 
         for (Tittle item:watchedList) {
             System.out.print(item.getName());
-            Film film = (Film) item;
-            System.out.println(" - " + film.getClassification());
+            if (item instanceof Film film) {
+                System.out.println(" - " + film.getClassification());     
+            }
         }
 
         // Outra opção de foreach (lambda):
