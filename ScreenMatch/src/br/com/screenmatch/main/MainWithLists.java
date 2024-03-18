@@ -2,6 +2,7 @@ package br.com.screenmatch.main;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 import br.com.screenmatch.models.Film;
 import br.com.screenmatch.models.Serie;
@@ -51,6 +52,9 @@ public class MainWithLists {
         
         Collections.sort(watchedList);
         System.out.println("\nLista de títulos por ordem alfabética:");
+        System.out.println(watchedList);
+        watchedList.sort(Comparator.comparing(Tittle::getReleaseYear));
+        System.out.println("\nLista de títulos por ordem de lançamento:");
         System.out.println(watchedList);
     }
 }
