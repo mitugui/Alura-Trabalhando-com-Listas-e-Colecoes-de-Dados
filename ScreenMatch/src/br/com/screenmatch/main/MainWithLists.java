@@ -1,6 +1,7 @@
 package br.com.screenmatch.main;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import br.com.screenmatch.models.Film;
 import br.com.screenmatch.models.Serie;
@@ -38,5 +39,18 @@ public class MainWithLists {
 
         // Outra opção de for-each (Method Reference):
         // watchedList.forEach(System.out::println);
+
+        ArrayList<String> searchForArtist = new ArrayList<>();
+        searchForArtist.add("Ryan Gosling");
+        searchForArtist.add("Emma Stone");
+        searchForArtist.add("Cillian Murphy");
+
+        System.out.println("\n" +searchForArtist);
+        Collections.sort(searchForArtist);
+        System.out.println(searchForArtist);
+        
+        Collections.sort(watchedList);
+        System.out.println("\nLista de títulos por ordem alfabética:");
+        System.out.println(watchedList);
     }
 }

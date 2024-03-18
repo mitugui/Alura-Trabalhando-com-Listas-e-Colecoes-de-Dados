@@ -1,6 +1,6 @@
 package br.com.screenmatch.models;
 
-public class Tittle {
+public class Tittle implements Comparable<Tittle>{
     private String name;
     private int releaseYear;
     private boolean includedInPlan;
@@ -61,5 +61,10 @@ public class Tittle {
 
     public double getTotalRatings() {
         return totalRatings;
+    }
+
+    @Override
+    public int compareTo(Tittle otherTittle) {
+        return this.getName().compareTo(otherTittle.getName());
     }
 }
