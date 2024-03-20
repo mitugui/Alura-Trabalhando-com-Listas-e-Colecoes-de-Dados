@@ -3,6 +3,7 @@ package br.com.screenmatch.main;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 import br.com.screenmatch.models.Film;
 import br.com.screenmatch.models.Serie;
@@ -41,7 +42,7 @@ public class MainWithLists {
         // Outra opção de for-each (Method Reference):
         // watchedList.forEach(System.out::println);
 
-        ArrayList<String> searchForArtist = new ArrayList<>();
+        List<String> searchForArtist = new ArrayList<>(); // List é uma interface implementada por ArrayList e outras 
         searchForArtist.add("Ryan Gosling");
         searchForArtist.add("Emma Stone");
         searchForArtist.add("Cillian Murphy");
